@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">appEnsayo</string>
+    <string name="txt_play">Jugar</string>
+    <string name="txt_profile">Perfil</string>
+    <string name="txt_setting">Configuracion</string>
+    <string name="txt_about">Acerca de</string>
+    <string name="txt_close">Cerrar</string>
+    <string name="txt_given">Le ha dado al boton</string>
+
+</resources>
