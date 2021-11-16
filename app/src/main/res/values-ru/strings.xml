@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">appEnsayo</string>
+    <string name="txt_play">Играть</string>
+    <string name="txt_profile">" ПРОФИЛЬ"</string>
+    <string name="txt_setting">ПАРАМЕТР</string>
+    <string name="txt_about">O</string>
+    <string name="txt_close">"СЛИШКОМ БЛИЗКО "</string>
+    <string name="txt_given">"Нажал кнопку "</string>
+    <string name="txt_user">" ИМЯ ПОЛЬЗОВАТЕЛЯ"</string>
+    <string name="txt_password">ПАРОЛЬ</string>
+    <string name="txt_login">"АВТОРИЗОВАТЬСЯ "</string>
+    <string name="txt_register">РЕГИСТРАЦИЯ</string>
+
+
+</resources>
