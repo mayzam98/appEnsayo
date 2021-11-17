@@ -10,5 +10,6 @@
     <string name="txt_register">REGISTRO</string>
     <string name="txt_user">USUARIO</string>
     <string name="txt_password">CONTRASEÑA</string>
+    <string name="Terminos_condiciones">TERMINOS Y CONDICIONES</string>
 
 </resources>

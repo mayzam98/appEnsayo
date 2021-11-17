@@ -34,30 +34,31 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="25"
+                android:layout_weight="20"
                 android:text="@string/txt_user"
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp"></TextView>
 
             <EditText
+                android:id="@+id/edt_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="25"
+                android:layout_weight="30"
                 style="@style/MyEditText">
             </EditText>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="25"
+                android:layout_weight="20"
                 android:text="@string/txt_password"
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp"></TextView>
             <EditText
-
+                android:id="@+id/edt_contrasena"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="25"
+                android:layout_weight="30"
                 style="@style/MyEditText">
             </EditText>
 

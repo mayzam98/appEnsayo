@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEnsayo">
-
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme.AppEnsayo.NoActionBar" />
         <activity
             android:name=".RegistroActivity"
-                android:exported="false"> </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -22,10 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

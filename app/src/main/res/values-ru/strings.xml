@@ -10,6 +10,7 @@
     <string name="txt_password">ПАРОЛЬ</string>
     <string name="txt_login">"АВТОРИЗОВАТЬСЯ "</string>
     <string name="txt_register">РЕГИСТРАЦИЯ</string>
+    <string name="Terminos_condiciones">УСЛОВИЯ И ПОЛОЖЕНИЯ</string>
 
 
 </resources>
