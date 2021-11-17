@@ -11,20 +11,24 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
+    public Activity miActividad;
+
     private Button btn_login;
     private Button btn_registro;
-    public Activity miActividad;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
         miActividad = this;
+
         btn_login = findViewById(R.id.btn_login);
         btn_registro = findViewById(R.id.btn_registro);
 
         btn_registro.setOnClickListener(this);
         btn_login.setOnClickListener(this);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
     }
 
     @Override
