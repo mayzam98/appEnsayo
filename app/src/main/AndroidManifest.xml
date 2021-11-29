@@ -10,22 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEnsayo">
         <activity
+            android:name=".TerminosCondiciones"
+            android:exported="true" >
+
+        </activity>
+        <activity
             android:name=".MenuActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.AppEnsayo.NoActionBar" />
-        <activity
-            android:name=".RegistroActivity"
-            android:exported="false"></activity>
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true">
+            android:theme="@style/Theme.AppEnsayo.NoActionBar"> <!-- SE PONE ESTE TEMA SI NO DE DESEA ACTION BAR -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppEnsayo.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppEnsayo.NoActionBar"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="false" />

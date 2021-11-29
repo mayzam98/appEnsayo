@@ -50,6 +50,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if(usuario.equals("admin@admin.com") && contrasena.equals("admin")  ){
                     Toast.makeText(LoginActivity.this, "Se ha iniciado sesion", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+                    intent.putExtra("usuario", usuario);
+                    intent.putExtra("contrasena", contrasena);
                     startActivity(intent);
 
                 }else{

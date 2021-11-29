@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:background="@drawable/campo_redondeado">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50">
+
+    <ImageView
+        android:id="@+id/imv_producto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_twitch"
+        android:paddingHorizontal="16dp">
+
+    </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tev_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            style="@style/TextSizeItem"></TextView>
+        <TextView
+            android:id="@+id/tev_item_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria: "
+            style="@style/TextSizeItem"></TextView>
+        <TextView
+            android:id="@+id/tev_item_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio: "
+            style="@style/TextSizeItem"></TextView>
+
+        <Button
+            android:id="@+id/btn_item_favoritos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favoritos"
+            android:layout_marginRight="10dp"></Button>
+        <Button
+            android:id="@+id/btn_item_carrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carrito"
+            android:layout_marginRight="10dp"></Button>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

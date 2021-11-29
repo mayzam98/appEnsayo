@@ -1,6 +1,7 @@
 package com.example.appensayo;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 
@@ -27,6 +28,16 @@ public class MenuActivity extends AppCompatActivity {
 
         binding = ActivityMenuBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        //Para recibir los datos enviados a esta activivad,
+        //debo primero recibir  la forma en que llamaron a a la actividad Intent...getIntent
+        Bundle bundle  = getIntent().getExtras();
+        if(bundle != null){
+            Log.e("Bun_Usuario: ", bundle.getString("usuario"));
+            Log.e("Bun_Contraseña: ", bundle.getString("contrasena"));
+
+        }
+
 
         setSupportActionBar(binding.appBarMenu.toolbar);
         binding.appBarMenu.fab.setOnClickListener(new View.OnClickListener() {

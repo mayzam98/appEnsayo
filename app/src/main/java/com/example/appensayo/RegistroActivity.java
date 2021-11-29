@@ -2,12 +2,14 @@ package com.example.appensayo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.regex.Matcher;
@@ -18,6 +20,7 @@ public class RegistroActivity extends AppCompatActivity {
     private CheckBox chb_terminos;
     private Button btn_registro_usuario;
     private EditText edt_contrasena;
+    private TextView tev_terminos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,20 +29,21 @@ public class RegistroActivity extends AppCompatActivity {
         btn_registro_usuario = findViewById(R.id.btn_registro_usuario);
         chb_terminos = findViewById(R.id.chb_terminos);
         edt_contrasena = findViewById(R.id.edt_contrasena);
+        tev_terminos = findViewById(R.id.tev_terminos);
+
 
 
         btn_registro_usuario.setEnabled(false);
 
-        /*chb_terminos.setOnClickListener(new View.OnClickListener() {
+        tev_terminos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(chb_terminos.isChecked()){
-                    btn_registro_usuario.setEnabled(true);
-                }else{
-                    btn_registro_usuario.setEnabled(false);
-                }
+                Intent intent = new Intent(RegistroActivity.this, TerminosCondiciones.class);
+                startActivity(intent);
+
             }
-        });*/
+        });
+
 
         chb_terminos.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
